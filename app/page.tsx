@@ -1,5 +1,6 @@
 import { ConvexHttpClient } from "convex/browser";
 import { api } from "../convex/_generated/api";
+import ButtonPressPanel from "@/components/ButtonPressPanel";
 
 const convexUrl = process.env.NEXT_PUBLIC_CONVEX_URL;
 if (!convexUrl) {
@@ -114,6 +115,7 @@ export default async function Home() {
             </div>
           </div>
         </section>
+        <ButtonPressPanel />
       </main>
     </div>
   );
